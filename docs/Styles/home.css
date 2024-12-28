@@ -1,6 +1,11 @@
 /* Estilos Generales y Scroll-top */
 body {
     scroll-behavior: smooth;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: rgb(235, 234, 230);
+    color: rgb(21, 21, 23);
   }
   section {
     padding: 60px 20px;
@@ -25,4 +30,125 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+/* Estilos Navbar */
+.navbar-brand {
+  font-family: "Covered By Your Grace", serif;
+  font-size: 30px;
+}
+
+/* Estilos Navbar Mobile*/
+.navbar-collapse {
+  padding: 20px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1049;
+  width: 100%;
+  background-color: rgb(160, 106, 117);
+}
+
+.nav-item a {
+  color: rgb(250, 244, 232);
+  font-weight: bold;
+}
+
+.navbar-toggler{
+  border: none;
+  color: black;
+}
+
+/* Fin Estilos Navbar Mobile*/
+
+/* Estilos Home*/
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../img/home.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.home-name {
+  font-size: 23px;
+}
+.home-title {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.home-text {
+  font-family: "Caveat", serif;
+  font-size: 20px;
+}
+/* Fin Estilos Home*/
+
+/* Estilos Filosofía*/
+.philosophy-section {
+  background-image: url(../img/paper.jpg); 
+}
+.philosophy-box {
+  background-color: white;
+  h4 {
+    text-transform: uppercase;
+  }
+  p {
+    font-family: "Caveat", serif;
+    font-size: 20px;
+    color: #333333;
+  }
+}
+
+.philosophy-title {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Fin Estilos Filosofía*/
+
+
+
+
+/* Estilos Proyectos*/
+.proyects h2{
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.project-box img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.project-box button {
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: rgb(177, 184, 186);
+  
+  a {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    font-weight: 500;
+
+  }
+}
+
+/*Estilos Contacto*/
+section#contact{
+  background-color: rgb(43, 41, 42);
+  color: white;
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+  }
 }
