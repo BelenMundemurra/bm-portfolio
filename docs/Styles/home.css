@@ -39,24 +39,51 @@ body {
 }
 
 /* Estilos Navbar Mobile*/
+.navbar-button {
+    position: relative;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.line {
+    display: block;
+    width: 20px; 
+    height: 3px; 
+    margin: 5px auto;
+    background-color: black; 
+    transition: transform 0.5s ease, opacity 0.5s ease; 
+}
+
+.navbar-button.active .line:first-child {
+    transform: rotate(45deg) translate(5px, 1px);
+}
+
+.navbar-button.active .line:last-child {
+    transform: rotate(-45deg) translate(5px, -1px);
+}
+
 .navbar-collapse {
-  padding: 20px;
   position: absolute;
+  z-index: 1000;
   top: 100%;
-  left: 0;
-  z-index: 1049;
+  left: 0px;
   width: 100%;
-  background-color: rgb(160, 106, 117);
+  background-color: #f1f1f1;
+}
+
+.navbar-nav {
+  padding: 20px ;
 }
 
 .nav-item a {
-  color: rgb(250, 244, 232);
-  font-weight: bold;
+  color: rgb(0, 0, 0);
 }
 
-.navbar-toggler{
-  border: none;
-  color: black;
+
+.nav-link:focus, .nav-link:hover {
+  color: rgb(0, 0, 0);
 }
 
 /* Fin Estilos Navbar Mobile*/
@@ -67,9 +94,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(../img/home.jpg);
   background-size: cover;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .home-name {
