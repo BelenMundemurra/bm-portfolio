@@ -2,13 +2,13 @@
 body {
     scroll-behavior: smooth;
     font-family: "Inter", serif;
-    font-weight: 500;
     font-style: normal;
-
-    color: rgb(21, 21, 23);
+    font-weight: 400;
+    color: #424242;
+    background-color: rgb(225, 224, 255);
   }
   section {
-    padding: 60px 20px;
+    padding: 20px 20px;
   }
   nav {
     position: sticky;
@@ -32,10 +32,30 @@ body {
     cursor: pointer;
 }
 
+/* Estilos titulos */
+.general-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(69, 50, 122);
+  font-size: clamp(26px, 5vw, var(32px));
+}
+/* Estilos sub titulos */
+
+
+
+/* Fin Estilos Generales */
+
+
+
 /* Estilos Navbar */
+.navbar-expand-lg {
+  background-color: rgb(225, 224, 255);
+}
+
 .navbar-brand {
   font-family: "Covered By Your Grace", serif;
   font-size: 30px;
+  color: rgb(69, 50, 122);
 }
 
 /* Estilos Navbar Mobile*/
@@ -52,7 +72,7 @@ body {
   width: 20px; 
   height: 3px; 
   margin: 5px auto;
-  background-color: black; 
+  background-color: rgb(69, 50, 122);
   transition: transform 0.5s ease, opacity 0.5s ease; 
 }
 
@@ -106,18 +126,16 @@ body {
   justify-content: center;
   background-size: cover;
   color: rgb(69, 50, 122);
-  font-weight: 400;
-  background-color: rgb(225, 224, 255);
 }
 
 .home-name {
   font-size: 18px;
-
+  font-weight: 600;
 }
 
 .home-title {
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: clamp(40px, 8vw, 80px);
   font-weight: bold;
   background: linear-gradient(to right, #150338, #2b155b, #442580, #5f37a6, #7b49cf);;
   -webkit-background-clip: text; /* Aplica el degradado solo al texto */
@@ -127,67 +145,103 @@ body {
 
 .home-text {
   padding-top: 20px;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.home-mail {
+  padding: 7px;
+  font-style: italic;
 }
 /* Fin Estilos Home*/
 
 /* Estilos Filosofía*/
-.philosophy-title {
-  font-size: 30px;
-  font-weight: bold;
+.philosophy-box h4 {
+  color: rgb(69, 50, 122);
+  font-weight: 500;
 }
-
-.philosophy-box {
-  border: solid 1px rgba(155, 155, 155, 0.185);
-  p {
-    font-weight: 400;
-    font-size: 16px;
-    color: #424242;
-  }
-}
-
-
-
 /* Fin Estilos Filosofía*/
 
 
-
-
 /* Estilos Proyectos*/
-.proyects h2{
-  text-transform: uppercase;
-  font-size: 35px;
+.sub-title {
+  margin: 0px;
+}
+.project-box {
+  border-radius: 10px;
+  background-color: rgb(247, 246, 255);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.041);
+  transition: transform 0.3s;
+  padding: 25px;
+
+  p {
+    margin: 0px;
+  }
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+}
+.project-box img {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.project-box h4 {
   font-weight: bold;
 }
 
-.project-box img {
-  width: 100%;
-  border-radius: 5px;
+.project1-title {
+  color: rgb(69, 50, 122);
 }
 
 .project-box button {
-  text-transform: uppercase;
-  border: none;
+  background-color: transparent;
+  border: 1.5px solid rgb(69, 50, 122);
   border-radius: 5px;
-  padding: 5px 15px;
-  background-color: rgb(177, 184, 186);
-  
+  margin-top: 20px;
   a {
     text-decoration: none;
-    color: rgb(253, 253, 253);
+    color: rgb(69, 50, 122);
     font-weight: 500;
-
+    padding: 10px;
   }
 }
 
-/*Estilos Contacto*/
-section#contact{
-  background-color: rgb(43, 41, 42);
-  color: white;
 
-  h2 {
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: bold;
+/*Estilos Experiencia*/
+#internship-title {
+  font-size: 20px;
+  margin: 8px 0px;
+  color: rgb(69, 50, 122);
+}
+
+.internship-info {
+  font-size: 15px;
+  margin: 0px;
+  font-weight: 500;
+}
+
+#internship-desc {
+  margin: 8px 0px;
+}
+
+
+/*Estilos Habilidades*/
+.skills-box {
+  border: none;
+
+  h4 {
+    color: rgb(69, 50, 122);
+    font-weight: 500;
   }
+
+  ul {
+    list-style: none;
+    padding: 0px;
+  }
+}
+/*Estilos Contacto*/
+#contact-mail {
+  font-weight: bold;
 }
