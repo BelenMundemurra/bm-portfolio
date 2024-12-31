@@ -28,7 +28,6 @@
         <span class="line"></span>
     </button>
     
-      
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto"> 
           <li class="nav-item"><a class="nav-link" id="nav-about" href="#about">Mi Filosofía</a></li>
@@ -45,10 +44,10 @@
   <!-- Sección de Home-->
   <section id="home" class="home">
     <div>
-      <h2 id="home-name" class="home-name">Hola! Soy Belén Mundemurra.</h2>
-      <h1 id="home-title" class="home-title">Desarrolladora Web & Tester Junior.</h1>
-      <p id="home-text" class="home-text">Explora mi portafolio para conocer más sobre mi trabajo y experiencia.</p>
-      <p class="home-mail"> munde.belen@gmail.com</p>
+      <h2 id="home-name" class="home-name mb-4">Hola! Soy Belén Mundemurra.</h2>
+      <h1 id="home-title" class="home-title mb-4">Desarrolladora Web & Tester Junior.</h1>
+      <p id="home-text" class="home-text mb-4">Explora mi portafolio para conocer más sobre mi trabajo y experiencia.</p>
+      <p class="home-mail mb-4"> munde.belen@gmail.com</p>
     </div>
   </section>
 
@@ -214,15 +213,22 @@
 
           <!-- Email -->
           <p id="contact-mail" class="text-center">munde.belen@gmail.com</p>
-
-          <!-- LinkedIn Link -->
-          <a id="contact-linkedin" href="https://www.linkedin.com/in/bel%C3%A9n-mundemurra/" target="_blank" class="btn btn-link mb-3">LinkedIn</a>
+          <div class="box-contact-social">
+            <!-- LinkedIn Link -->
+            <a id="contact-linkedin" href="https://www.linkedin.com/in/bel%C3%A9n-mundemurra/" target="_blank" class="btn btn-link mb-3">
+              <img src="../docs/img/linkedin.png" alt="">
+              <p>LinkedIn</p>
+            </a>
                     
-          <!-- GitHub Link -->
-          <a id="contact-github" href="https://github.com/BelenMundemurra" target="_blank" class="btn btn-link mb-3">GitHub</a>
-    
+            <!-- GitHub Link -->
+            <a id="contact-github" href="https://github.com/BelenMundemurra" target="_blank" class="btn btn-link mb-3">
+              <img src="../docs/img/github.png" alt="">
+              <p>GitHub</p>
+            </a>
+          </div>
+
           <!-- CV -->
-          <button class="btn btn-outline-primary" id="view-cv">Ver Curriculum</button>
+          <button class="btn btn-contacto" id="view-cv">Ver Curriculum</button>
           
           <!-- CV Modal -->
           <div id="cv-modal" class="modal fade" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
@@ -232,10 +238,10 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <iframe src="ruta-del-cv.pdf" width="100%" height="500px" style="border: none;"></iframe>
+                  <img src="../docs/img/BM - 2024.png" alt="" width="100%"  style="border: none;">
                 </div>
                 <div class="modal-footer">
-                  <a id="contact-download" href="ruta-del-cv.pdf" download class="btn btn-primary">Descargar Currículum</a>
+                  <a id="contact-download" href="../docs/img/BM - 2024 (1).pdf" download class="btn btn-contacto">Descargar Currículum</a>
                 </div>
               </div>
             </div>
