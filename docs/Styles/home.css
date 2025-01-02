@@ -1,43 +1,39 @@
 /* Estilos Generales y Scroll-top */
 body {
-    scroll-behavior: smooth;
-    font-family: "Inter", serif;
-    font-style: normal;
-    font-weight: 400;
-    color: #424242;
-    background-color: rgb(225, 224, 255);
-  }
-  section {
-    padding: 20px 20px;
-  }
-  nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  #scroll-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    font-size: 24px;
-    background: #000000;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  scroll-behavior: smooth;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #424242;
+  background-color: rgb(225, 224, 255);
+}
+section {
+  padding: 20px 20px;
+}
+
+#scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  font-size: 24px;
+  background: #000000;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 /* Estilos titulos */
 .general-title {
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(69, 50, 122);
-  font-size: clamp(26px, 5vw, var(32px));
+font-size: 30px;
+font-weight: bold;
+color: rgb(69, 50, 122);
+font-size: clamp(26px, 5vw, var(32px));
 }
 /* Estilos sub titulos */
 
@@ -48,223 +44,263 @@ body {
 
 
 /* Estilos Navbar */
-.navbar-expand-lg {
-  background-color: rgb(225, 224, 255);
-}
-
 .navbar-brand {
-  font-family: "Covered By Your Grace", serif;
-  font-size: 30px;
-  color: rgb(69, 50, 122);
-}
-
-/* Estilos Navbar Mobile*/
-.navbar-button {
-  position: relative;
-  background: none;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.line {
-  display: block;
-  width: 20px; 
-  height: 3px; 
-  margin: 5px auto;
-  background-color: rgb(69, 50, 122);
-  transition: transform 0.5s ease, opacity 0.5s ease; 
-}
-
-.navbar-button.active .line:first-child {
-  transform: rotate(45deg) translate(5px, 1px);
-}
-
-.navbar-button.active .line:last-child {
-  transform: rotate(-45deg) translate(5px, -1px);
+font-family: "Covered By Your Grace", serif;
+font-size: 30px;
 }
 
 .navbar-collapse {
-  position: absolute;
-  z-index: 1000;
-  top: 100%;
-  left: 0px;
-  width: 100%;
-  height: 100vh;
+display: flex;
+flex-direction: row;
+justify-content: end;
 
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* Compatibilidad con navegadores WebKit */
-  border-bottom-right-radius: 10px;
-  box-shadow: 0 4px 6px rgba(100, 100, 100, 0.267); 
+button {
+  margin-left: 14px;
+  border: 1px solid;
+  color: #424242;
 }
 
+button:hover {
+  border: 2px solid #424242;
+  background-color:transparent;
+  color: #424242;
+  font-weight: bold;
+  
+}
+}
+
+/* Fin Estilos Navbar*/
+/* Estilos Navbar Mobile*/
+@media (max-width: 768px) {
+.navbar-button {
+position: relative;
+background: transparent;
+border: none;
+z-index: 1000;
+}
+
+.line {
+display: block;
+width: 20px; 
+height: 3px; 
+margin: 5px auto;
+background-color: rgb(69, 50, 122);
+transition: transform 0.5s ease, opacity 0.5s ease; 
+}
+
+.navbar-button.active .line:first-child {
+transform: rotate(45deg) translate(5px, 1px);
+}
+
+.navbar-button.active .line:last-child {
+transform: rotate(-45deg) translate(5px, -1px);
+}
+
+.navbar-collapse {
+
+position: absolute;
+flex-direction: column;
+align-items: start;
+justify-content: start;
+top: 0px;
+right: 0px;
+width: 80%;
+height: 100vh;
+z-index: 2;
+padding-top: 70px;
+background-color: rgb(167, 167, 167);
+transition: height 0.1s ease;
+}
+
+.navbar-nav {
+width: 100%;
+}
 .navbar-collapse button {
-  margin: 20px;
-  background-color: #000000;
-  color: white;
-  border: none;
-  font-size: 15px;
+margin: 20px;
+background-color: rgb(230, 224, 247);
+color: rgb(69, 50, 122);
+border: none;
+font-size: 15px;
+font-weight: bold;
 }
 
 .nav-item a {
-  margin:10px 20px 0px 20px;
-  color: rgb(255, 255, 255);
-  border-bottom: rgb(236, 234, 234) solid 1px;
+margin:10px 20px 0px 20px;
+color:rgb(69, 50, 122);
+border-bottom: rgb(69, 50, 122) solid 1px;
 }
 
 .nav-link:focus, .nav-link:hover {
-  color: rgb(255, 255, 255);
+color: rgb(69, 50, 122);
+}
+}
+
+.blur {
+filter: blur(2.4px);
+
+}
+.overflow {
+overflow: hidden;
 }
 
 /* Fin Estilos Navbar Mobile*/
 
 /* Estilos Home*/
 .home {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-size: cover;
-  color: rgb(69, 50, 122);
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-size: cover;
+color: rgb(69, 50, 122);
 }
 
 .home-name {
-  font-size: 18px;
-  font-weight: 600;
+font-size: 18px;
+font-weight: 600;
 }
 
 .home-title {
-  text-transform: uppercase;
-  font-size: 8vw;
-  font-weight: bold;
-  background: linear-gradient(to right, #150338, #2b155b, #442580, #5f37a6, #7b49cf);;
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent; 
-  text-fill-color: transparent;
+text-transform: uppercase;
+font-size: 7vw;
+font-weight: bold;
+background: linear-gradient(to right, #150338, #2b155b, #442580, #5f37a6, #7b49cf);;
+-webkit-background-clip: text; 
+-webkit-text-fill-color: transparent; 
+text-fill-color: transparent;
 }
 
 .home-text {
-  padding-top: 20px;
-  font-size: 18px;
-  font-weight: 300;
+padding-top: 20px;
+font-size: 18px;
+font-weight: 300;
 }
 
 .home-mail {
-  padding: 7px;
-  font-style: italic;
+padding: 7px;
+font-style: italic;
 }
 /* Fin Estilos Home*/
 
 /* Estilos Filosofía*/
 .philosophy-box h4 {
-  color: rgb(69, 50, 122);
-  font-weight: 500;
+color: rgb(69, 50, 122);
+font-weight: 500;
 }
 /* Fin Estilos Filosofía*/
 
 
 /* Estilos Proyectos*/
 .sub-title {
-  margin: 0px;
+margin: 0px;
 }
 .project-box {
-  border-radius: 10px;
-  background-color: rgb(247, 246, 255);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.041);
-  transition: transform 0.3s;
-  padding: 25px;
+border-radius: 10px;
+background-color: rgb(247, 246, 255);
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.041);
+transition: transform 0.3s;
+padding: 25px;
 
-  p {
-    margin: 0px;
-  }
+p {
+  margin: 0px;
+}
 }
 
 .project-box:hover {
-  transform: translateY(-5px);
+transform: translateY(-5px);
 }
 .project-box img {
-  width: 100%;
-  margin: 20px 0px;
+width: 100%;
+margin: 20px 0px;
 }
 
 .project-box h4 {
-  font-weight: bold;
+font-weight: bold;
 }
 
 .project1-title {
-  color: rgb(69, 50, 122);
+color: rgb(69, 50, 122);
 }
 
 .project-box button {
-  background-color: transparent;
-  border: 1.5px solid rgb(69, 50, 122);
-  border-radius: 5px;
-  margin-top: 20px;
-  a {
-    text-decoration: none;
-    color: rgb(69, 50, 122);
-    font-weight: 500;
-    padding: 10px;
-  }
+background-color: transparent;
+border: 1.5px solid rgb(69, 50, 122);
+border-radius: 5px;
+margin-top: 20px;
+a {
+  text-decoration: none;
+  color: rgb(69, 50, 122);
+  font-weight: 500;
+  padding: 10px;
+}
 }
 
 
 /*Estilos Experiencia*/
 #internship-title {
-  font-size: 20px;
-  margin: 8px 0px;
-  color: rgb(69, 50, 122);
+font-size: 20px;
+margin: 8px 0px;
+color: rgb(69, 50, 122);
 }
 
 .internship-info {
-  font-size: 15px;
-  margin: 0px;
-  font-weight: 500;
+font-size: 15px;
+margin: 0px;
+font-weight: 500;
 }
 
 #internship-desc {
-  margin: 8px 0px;
+margin: 8px 0px;
 }
 
 
 /*Estilos Habilidades*/
 .skills-box {
-  border: none;
+border: none;
 
-  h4 {
-    color: rgb(69, 50, 122);
-    font-weight: 500;
-  }
+h4 {
+  color: rgb(69, 50, 122);
+  font-weight: 500;
+}
 
-  ul {
-    padding: 0px 12px;
-  }
+ul {
+  padding: 0px 12px;
+}
 }
 
 #skills-title {
-  margin-bottom: 24px;
+margin-bottom: 24px;
 }
 /*Estilos Contacto*/
 #contact-mail {
-  font-weight: bold;
-  color: black;
+font-weight: bold;
+color: black;
 }
+
 .box-contact-social {
-  display: flex;
+display: flex;
 }
+
 .btn-contacto {
-  background-color: rgb(69, 50, 122);
-  color: rgb(238, 232, 255);
+background-color: rgb(69, 50, 122);
+color: rgb(238, 232, 255);
 }
-
+.btn-contacto:hover {
+ border: 1px solid rgb(69, 50, 122);
+}
 .btn-link {
-  display: flex;
-  color: black;
+display: flex;
+color: black;
+text-decoration: none;
+font-weight: bold;
 }
-.btn-link img {
-  width: 30px;
-  height: 30px;
-  margin-right: 15px;
 
+.btn-link:hover {
+color: black;
+}
+
+.btn-link img {
+width: 30px;
+height: 30px;
+margin-right: 15px;
 }

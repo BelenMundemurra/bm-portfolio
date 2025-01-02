@@ -1,8 +1,16 @@
 const navbarButton = document.querySelector('.navbar-button');
+const navbarBackground = document.getElementById('home');
+const body = document.body;
+
+
 
 navbarButton.addEventListener('click', () => {
     navbarButton.classList.toggle('active');
+    navbarBackground.classList.toggle('blur');
+    body.classList.toggle('overflow');
 });
+
+
 
 // Bootstrap Modal
 document.getElementById('view-cv').addEventListener('click', function() {
@@ -41,7 +49,7 @@ document.getElementById('view-cv').addEventListener('click', function() {
     "testing-title": "Testing",
     "management-title": "Management and Collaboration",
     "contact-title":"Contact",
-    "contact-mail" : "Email Address: munde.belen@gmail.com",
+    "contact-mail" : "munde.belen@gmail.com",
     "view-cv" : "View Resume",
     "contact-download" : "Download Resume"
   };
@@ -83,11 +91,11 @@ document.getElementById('view-cv').addEventListener('click', function() {
   // Botón cambio idiomas
   document.getElementById("language-btn").addEventListener("click", function() {
     const currentLanguage = document.getElementById("language-btn").innerText;
-    const newLanguage = currentLanguage === "EN" ? enText : esText;
+    const newLanguage = currentLanguage === "English" ? enText : esText;
     for (const [key, value] of Object.entries(newLanguage)) {
       document.getElementById(key).innerText = value;
     }
-    document.getElementById("language-btn").innerText = currentLanguage === "EN" ? "ES" : "EN";
+    document.getElementById("language-btn").innerText = currentLanguage === "English" ? "Español" : "English";
   });
 
   // Botón de "subir" cuando se haga scroll hacia abajo
