@@ -54,18 +54,14 @@ display: flex;
 flex-direction: row;
 justify-content: end;
 
-button {
-  margin-left: 14px;
-  border: 1px solid;
-  color: #424242;
+button:hover {
+  background-color: rgb(69, 50, 122);
+  color: rgb(238, 232, 255);
 }
 
-button:hover {
-  border: 2px solid #424242;
-  background-color:transparent;
-  color: #424242;
-  font-weight: bold;
-  
+button {
+ border: 1px solid rgb(69, 50, 122);
+ margin-left: 10px;
 }
 }
 
@@ -211,7 +207,9 @@ transform: translateY(-5px);
 }
 .project-box img {
 width: 100%;
+height: 50%;
 margin: 20px 0px;
+overflow: hidden;
 }
 
 .project-box h4 {
@@ -273,21 +271,23 @@ margin-bottom: 24px;
 }
 /*Estilos Contacto*/
 #contact-mail {
-font-weight: bold;
-color: black;
+  font-weight: bold;
+  color: black;
 }
 
 .box-contact-social {
-display: flex;
+  display: flex;
 }
 
 .btn-contacto {
-background-color: rgb(69, 50, 122);
-color: rgb(238, 232, 255);
+  background-color: rgb(69, 50, 122);
+  color: rgb(238, 232, 255);
 }
+
 .btn-contacto:hover {
  border: 1px solid rgb(69, 50, 122);
 }
+
 .btn-link {
 display: flex;
 color: black;
@@ -299,8 +299,12 @@ font-weight: bold;
 color: black;
 }
 
+.btn-link:active {
+  color: black !important;
+}
+
 .btn-link img {
-width: 30px;
-height: 30px;
-margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
 }
