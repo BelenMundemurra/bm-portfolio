@@ -129,6 +129,10 @@ border-bottom: rgb(69, 50, 122) solid 1px;
 .nav-link:focus, .nav-link:hover {
 color: rgb(69, 50, 122);
 }
+
+.navbar-toggler {
+  border-color: transparent;
+}
 }
 
 .blur {

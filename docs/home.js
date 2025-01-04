@@ -2,8 +2,6 @@ const navbarButton = document.querySelector('.navbar-button');
 const navbarBackground = document.getElementById('home');
 const body = document.body;
 
-
-
 navbarButton.addEventListener('click', () => {
     navbarButton.classList.toggle('active');
     navbarBackground.classList.toggle('blur');
@@ -89,14 +87,27 @@ document.getElementById('view-cv').addEventListener('click', function() {
   };
 
   // Botón cambio idiomas
-  document.getElementById("language-btn").addEventListener("click", function() {
+  document.getElementById("language-btn").addEventListener("click", function () {
     const currentLanguage = document.getElementById("language-btn").innerText;
     const newLanguage = currentLanguage === "English" ? enText : esText;
+
+  // Cambiar texto de los elementos
     for (const [key, value] of Object.entries(newLanguage)) {
       document.getElementById(key).innerText = value;
     }
+
+  // Cambiar texto del botón
     document.getElementById("language-btn").innerText = currentLanguage === "English" ? "Español" : "English";
+
+  // Cambiar la imagen y el PDF
+    const imgElement = document.getElementById("language-image");
+    const pdfElement = document.getElementById("contact-download");
+
+    imgElement.src = currentLanguage === "English" ? "img/cv-ingles.png" : "img/cv-espanol.png";
+    pdfElement.href = currentLanguage === "English" ? "files/cv-ingles.pdf" : "files/cv-espanol.pdf";
   });
+
+
 
   // Botón de "subir" cuando se haga scroll hacia abajo
   window.onscroll = function() {
