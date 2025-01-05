@@ -2,13 +2,31 @@ const navbarButton = document.querySelector('.navbar-button');
 const navbarBackground = document.getElementById('home');
 const body = document.body;
 
+const navbarCelular = document.getElementById('navbarNav');
+const navClose= document.querySelectorAll('.close-mobile');
+
+
+//Animaciones del navbar al abrir-cerrar
 navbarButton.addEventListener('click', () => {
-    navbarButton.classList.toggle('active');
-    navbarBackground.classList.toggle('blur');
-    body.classList.toggle('overflow');
+  toggleNavbar();
 });
 
+//Cerrar navbar mobile al darle click a un link del navbar
+navClose.forEach(item => {
+  item.addEventListener('click', () => {
+    if (navbarCelular.classList.contains('show')) {
+      navbarCelular.classList.remove('show');
+      toggleNavbar();
+    }
+  });
+});
 
+//Diseños del navbar al toggle
+function toggleNavbar() {
+  navbarButton.classList.toggle('active');
+  navbarBackground.classList.toggle('blur');
+  body.classList.toggle('overflow');
+}
 
 // Bootstrap Modal
 document.getElementById('view-cv').addEventListener('click', function() {
@@ -111,10 +129,10 @@ document.getElementById('view-cv').addEventListener('click', function() {
 
   // Botón de "subir" cuando se haga scroll hacia abajo
   window.onscroll = function() {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            document.getElementById("scroll-top").style.display = "block";
-        } else {
-            document.getElementById("scroll-top").style.display = "none";
-        }
-    };
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      document.getElementById("scroll-top").style.display = "block";
+    } else {
+      document.getElementById("scroll-top").style.display = "none";
+    }
+  };
 

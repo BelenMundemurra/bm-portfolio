@@ -24,6 +24,7 @@ section {
   width: 50px;
   height: 50px;
   cursor: pointer;
+  margin: auto;
 }
 
 /* Estilos titulos */
@@ -131,8 +132,8 @@ color: rgb(69, 50, 122);
 
 .blur {
 filter: blur(2.4px);
-
 }
+
 .overflow {
 overflow: hidden;
 }
@@ -158,10 +159,9 @@ font-weight: 600;
 text-transform: uppercase;
 font-size: 7vw;
 font-weight: bold;
-background: linear-gradient(to right, #150338, #2b155b, #442580, #5f37a6, #7b49cf);;
+background: linear-gradient(to right, #150338, #2b155b, #442580, #5f37a6, #7b49cf);
 -webkit-background-clip: text; 
 -webkit-text-fill-color: transparent; 
-text-fill-color: transparent;
 }
 
 .home-text {
