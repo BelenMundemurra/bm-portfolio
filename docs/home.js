@@ -2,7 +2,7 @@ const navbarButton = document.querySelector('.navbar-button');
 const navbarBackground = document.getElementById('home');
 const body = document.body;
 
-const navbarCelular = document.getElementById('navbarNav');
+const navbarMobile = document.getElementById('navbarNav');
 const navClose= document.querySelectorAll('.close-mobile');
 
 
@@ -14,8 +14,8 @@ navbarButton.addEventListener('click', () => {
 //Cerrar navbar mobile al darle click a un link del navbar
 navClose.forEach(item => {
   item.addEventListener('click', () => {
-    if (navbarCelular.classList.contains('show')) {
-      navbarCelular.classList.remove('show');
+    if (navbarMobile.classList.contains('show')) {
+      navbarMobile.classList.remove('show');
       toggleNavbar();
     }
   });
@@ -136,3 +136,10 @@ document.getElementById('view-cv').addEventListener('click', function() {
     }
   };
 
+  //Funcion para abrir mail al dar click
+  function openGmail() {
+    const encodedEmail = encodeURIComponent('munde.belen@gmail.com');
+    const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodedEmail;
+    
+    window.open(gmailUrl, '_blank');
+  }

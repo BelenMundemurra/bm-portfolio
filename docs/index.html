@@ -23,7 +23,6 @@
 </head>
 
 <body>
-  
   <nav class="navbar navbar-expand-lg close-mobile">
     <div class="container">
       <a class="navbar-brand" href="#home" id="nav-home">BM</a>
@@ -54,10 +53,11 @@
       <h2 id="home-name" class="home-name mb-4">Hola! Soy Belén Mundemurra.</h2>
       <h1 id="home-title" class="home-title mb-4">Desarrolladora Web & Tester Junior.</h1>
       <p id="home-text" class="home-text mb-4">Explora mi portafolio para conocer más sobre mi trabajo y experiencia.</p>
-      <p class="home-mail mb-4"> munde.belen@gmail.com</p>
+
+      <a href="#" onclick="openGmail()" class="home-mail mb-4">munde.belen@gmail.com</a>
     </div>
   </section>
-
+ 
   <!-- Sección de Filosofía-->
   <section id="about" class="philosophy-section">
     <div class="container">
@@ -100,7 +100,7 @@
           <h4 id="project1-title" class="project1-title" >Kai Beauty</h4>
           <img src="img/kaibeauty.png" alt="" class="shadow-sm">
           <p id="project1-desc">
-            En este proyecto realicé modificaciones en el diseño de la tienda online utilizando la plataforma Shoify alineando el diseño con los valores de la marca. 
+            En este proyecto realicé modificaciones en el diseño de la tienda online utilizando la plataforma Shopify alineando el diseño con los valores de la marca. 
           </p>
           <button>
             <a href="https://kai.uy/" target="_blank">Visitar Sitio Web</a>
@@ -133,7 +133,7 @@
           <img src="img/portfolio.png" alt="" class="shadow-sm">
 
           <p id="project3-desc">
-            Este portfolio personal fue diseñado de manera simple con html, JavaScript y css. Utilizando la libreria de Bootstrap.
+            Este portfolio personal fue diseñado de manera simple con HTML, JavaScript y CSS. Utilizando el framework Bootstrap.
           </p>
           <button>
             <a href="https://github.com/BelenMundemurra/bm-portfolio" target="_blank">Ver Git Hub</a>
@@ -154,8 +154,13 @@
                     <h4 id="internship-title">Pasantía: Auditoría en Procesos de Desarrollo TI.</h4>
                     <p id="internship-company" class="internship-info">Empresa: Telefónica (Movistar).</p>
                     <p id="internship-period" class="internship-info">Septiembre 2024 - Noviembre 2024</p>
-                    <p id="internship-desc"> Mi trabajo consistía en realizar un manual de "Desarrollo de Proyectos" del área de sistemas de la empresa.
-                      Para este trabajo relicé un relevamiento de la información con el fin de crear y redactar la documentación técnica, integrando las metodologías utilizadas por la empresa. Además, diseñé diagramas de flujo para optimizar los pasos clave en los proyectos y gestioné tareas utilizando la herramienta Trello.</p>
+                    <p id="internship-desc"> 
+                      Mi trabajo consistía en realizar un manual de "Desarrollo de Proyectos" para el área de sistemas.
+                      <br>
+                      Para este trabajo relicé un relevamiento de la información con el fin de crear y redactar la documentación técnica, integrando las metodologías utilizadas por la empresa. 
+                      <br>
+                      Además, diseñé diagramas de flujo para optimizar los pasos clave en los proyectos y gestioné tareas utilizando la herramienta Trello.
+                    </p>
                 </div>
             </div>
         </div>
@@ -201,9 +206,9 @@
                 <div class="skills-box">
                     <h4 class="mb-3" id="management-title">Gestión y Colaboración</h4>
                     <ul>
-                        <li>Documentación técnica</li>
-                        <li>Creación de diagramas de flujo</li>
-                        <li>Herramientas de gestión de proyectos: Trello, Jira</li>
+                        <li>Documentación técnica.</li>
+                        <li>Creación de diagramas de flujo.</li>
+                        <li>Herramientas de gestión de proyectos: Trello, Jira.</li>
                     </ul>
                 </div>
             </div>
@@ -219,7 +224,7 @@
           <p class="text-center">Actualmente estoy buscando nuevas oportunidades laborales. <br> Si buscar colaborar juntos no dudes en contactarme! </p>
 
           <!-- Email -->
-          <p id="contact-mail" class="text-center">munde.belen@gmail.com</p>
+          <p id="contact-mail" class="text-center" onclick="openGmail()">munde.belen@gmail.com</p>
           <div class="box-contact-social">
             <!-- LinkedIn Link -->
             <a id="contact-linkedin" href="https://www.linkedin.com/in/bel%C3%A9n-mundemurra/" target="_blank" class="btn btn-link mb-3">
