@@ -3,8 +3,7 @@ const navbarBackground = document.getElementById('home');
 const body = document.body;
 
 const navbarMobile = document.getElementById('navbarNav');
-const navClose= document.querySelectorAll('.close-mobile');
-
+const navClose= document.querySelectorAll('.navClose');
 
 //Animaciones del navbar al abrir-cerrar
 navbarButton.addEventListener('click', () => {
@@ -136,10 +135,28 @@ document.getElementById('view-cv').addEventListener('click', function() {
     }
   };
 
-  //Funcion para abrir mail al dar click
-  function openGmail() {
-    const encodedEmail = encodeURIComponent('munde.belen@gmail.com');
-    const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodedEmail;
-    
-    window.open(gmailUrl, '_blank');
-  }
+
+  // Alerta mail copiado
+  const emailParagraphs = document.querySelectorAll('.email'); // Nota: NodeList
+  const alertBox = document.getElementById('alert');
+  
+  // Función para copiar texto al portapapeles
+  emailParagraphs.forEach(emailParagraph => {
+      emailParagraph.addEventListener('click', () => {
+          const textToCopy = emailParagraph.textContent;
+  
+          // Copiar el texto al portapapeles
+          navigator.clipboard.writeText(textToCopy).then(() => {
+              // Mostrar la alerta personalizada
+              alertBox.classList.add('show');
+  
+              // Ocultar la alerta después de 2 segundos
+              setTimeout(() => {
+                  alertBox.classList.remove('show');
+              }, 2000);
+          }).catch(err => {
+              console.error('Error al copiar: ', err);
+          });
+      });
+  });
+  

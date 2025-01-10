@@ -64,7 +64,7 @@ button {
 
 /* Fin Estilos Navbar*/
 /* Estilos Navbar Mobile*/
-@media (max-width: 768px) {
+@media (max-width: 991px) {
 .navbar-button {
 position: relative;
 background: transparent;
@@ -171,8 +171,40 @@ font-weight: 300;
 .home-mail {
   padding: 7px;
   font-style: italic;
-    color: rgb(69, 50, 122);
+  color: rgb(69, 50, 122);
+  text-decoration: underline;
+  cursor: pointer;
 }
+
+/* Estilo de la alerta personalizada */
+.custom-alert {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color:  rgb(69, 50, 122);
+  color: rgb(237, 232, 252);
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  font-weight: bold;
+}
+
+.custom-alert.show {
+  display: block;
+  animation: fadeInOut 2s forwards;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10%, 90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+
+
+
 /* Fin Estilos Home*/
 
 /* Estilos Filosofía*/

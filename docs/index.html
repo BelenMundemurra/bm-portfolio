@@ -25,7 +25,7 @@
 <body>
   <nav class="navbar navbar-expand-lg close-mobile">
     <div class="container">
-      <a class="navbar-brand" href="#home" id="nav-home">BM</a>
+      <a class="navbar-brand navClose" href="#home" id="nav-home">BM</a>
 
       <button type="button" class="navbar-button navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-button">
         <span class="line"></span>
@@ -48,13 +48,16 @@
   </nav>
 
   <!-- Sección de Home-->
-  <section id="home" class="home close-mobile">
+  <section id="home" class="home navClose">
     <div class="container">
       <h2 id="home-name" class="home-name mb-4">Hola! Soy Belén Mundemurra.</h2>
       <h1 id="home-title" class="home-title mb-4">Desarrolladora Web & Tester Junior.</h1>
       <p id="home-text" class="home-text mb-4">Explora mi portafolio para conocer más sobre mi trabajo y experiencia.</p>
 
-      <a href="#" onclick="openGmail()" class="home-mail mb-4">munde.belen@gmail.com</a>
+      <p class="home-mail mb-4 email" id="email">munde.belen@gmail.com</p>
+
+      <!-- Contenedor de la alerta personalizada -->
+      <div class="custom-alert" id="alert">Email copiado</div>
     </div>
   </section>
  
@@ -224,7 +227,7 @@
           <p class="text-center">Actualmente estoy buscando nuevas oportunidades laborales. <br> Si buscar colaborar juntos no dudes en contactarme! </p>
 
           <!-- Email -->
-          <p id="contact-mail" class="text-center" onclick="openGmail()">munde.belen@gmail.com</p>
+          <p id="contact-mail" class="text-center email" onclick="openGmail()">munde.belen@gmail.com</p>
           <div class="box-contact-social">
             <!-- LinkedIn Link -->
             <a id="contact-linkedin" href="https://www.linkedin.com/in/bel%C3%A9n-mundemurra/" target="_blank" class="btn btn-link mb-3">
