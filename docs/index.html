@@ -52,7 +52,7 @@
     <div class="container">
       <h2 id="home-name" class="home-name mb-4">Hola! Soy Belén Mundemurra.</h2>
       <h1 id="home-title" class="home-title mb-4">Desarrolladora Web & Tester Junior.</h1>
-      <p id="home-text" class="home-text mb-4">Explora mi portafolio para conocer más sobre mi trabajo y experiencia.</p>
+      <p id="home-text" class="home-text mb-4">Te invito a explorar mi portafolio para descubrir más sobre mis proyectos y habilidades.</p>
 
       <p class="home-mail mb-4 email" id="email">munde.belen@gmail.com</p>
 
@@ -69,21 +69,21 @@
             <!-- F1 - Creatividad -->
             <div class="col-12 col-md-4 mb-4">
                 <div class="philosophy-box">
-                    <h4>Curiosidad.</h4>
+                    <h4 id="about-title-box" >Curiosidad.</h4>
                     <p id="about-text" class="about-text">Mantener la curiosidad activa me ayuda a aprender, mejorar y ejercitar la creatividad. Por lo tanto, siempre busco fortalecer mi conocimiento mediante la curiosidad.</p>
                 </div>
             </div>
             <!-- F2 - Atención al detalle -->
             <div class="col-12 col-md-4 mb-4">
                 <div class="philosophy-box">
-                    <h4>Atención al detalle.</h4>
+                    <h4 id="testing-title-box" >Atención al detalle.</h4>
                     <p id="testing-text">La atención en los pequeños detalles es lo que marca la diferencia entre cumplir con un resultado esperado y ofrecer uno con calidad.</p>
                 </div>
             </div>
             <!-- F3 - Colaboración -->
             <div class="col-12 col-md-4 mb-4">
                 <div class="philosophy-box">
-                    <h4>Colaboración.</h4>
+                    <h4 id="collaboration-title-box" >Colaboración.</h4>
                     <p id="collaboration-text">La diversidad de opiniones y experiencias ayuda a encontrar ideas creativas, soluciones eficientes y nuevos aprendizajes.</p>
                 </div>
             </div>
@@ -100,13 +100,13 @@
       <div class="col-12 col-md-6 mb-4">
         <div class="project-box">
           <p>E-commerce</p>
-          <h4 id="project1-title" class="project1-title" >Kai Beauty</h4>
+          <h4 class="project1-title" >Kai Beauty</h4>
           <img src="img/kaibeauty.png" alt="" class="shadow-sm">
           <p id="project1-desc">
-            En este proyecto, realicé modificaciones en el diseño de la tienda online utilizando la plataforma Shopify, asegurando que el diseño se alineara con los valores de la marca. 
+            Diseñé y optimicé el diseño de la página utilizando la plataforma Shopify, asegurando que el diseño se alineara con los valores de la marca. 
           </p>
           <button>
-            <a href="https://kai.uy/" target="_blank">Visitar Sitio Web</a>
+            <a href="https://kai.uy/" target="_blank" id="btn-project1">Visitar Sitio Web</a>
           </button>
         </div>
       </div>
@@ -114,7 +114,7 @@
       <!-- Proyecto 2 -->
       <div class="col-12 col-md-6 mb-4">
         <div class="project-box">
-          <p>Proyecto de Testing en Jóvenes a Programar</p>
+          <p id="project2-subtitle" >Proyecto de Testing</p>
           <h4 id="project2-title" class="project1-title">Veterinaria Guau Guau</h4>
           <img src="img/veterinaria.png" alt="" class="shadow-sm">
           
@@ -122,7 +122,7 @@
             Proyecto final del curso Jóvenes a Programar, en el que desempeñé el rol de tester y desarrollé habilidades de liderazgo, comunicación y gestión de proyectos en un entorno colaborativo.
           </p>
           <button>
-            <a href="img/Final Executive Testing Report - BM.pdf" target="_blank">Ver Documentación</a>
+            <a href="img/Final Executive Testing Report - BM.pdf" target="_blank" id="btn-project2">Ver Documentación</a>
           </button>
         </div>
       </div>
@@ -130,7 +130,7 @@
       <!-- Proyecto 3 -->
       <div class="col-12 col-md-6 mb-4">
         <div class="project-box">
-          <p>Portafolio Web</p>
+          <p id="project3-subtitle" >Portafolio Web</p>
           <h4 id="project3-title" class="project1-title">Portafolio Belén Mundemurra</h4>
           <img src="img/portfolio.png" alt="" class="shadow-sm">
 
@@ -138,7 +138,7 @@
             Este portafolio personal fue diseñado de forma sencilla utilizando HTML, CSS y JavaScript, junto con el framework Bootstrap. Además, cuenta con un respaldo en GitHub y puede visualizarse mediante GitHub Pages.
           </p>
           <button>
-            <a href="https://github.com/BelenMundemurra/bm-portfolio" target="_blank">Ver Git Hub</a>
+            <a href="https://github.com/BelenMundemurra/bm-portfolio" target="_blank" id="btn-project3">Ver GitHub</a>
           </button>
         </div>
       </div>
@@ -160,7 +160,7 @@
                       Elaboración del manual 'Proceso de Desarrollo de Proyectos' para el área de sistemas mediante relevamiento de información teniendo en cuenta las metologías 
                       utilizadas por la empresa y necesidad.
                       <br>
-                      Además, diseñé diagramas de flujo para visualizar de manera más rápida los procesos clave y gestioné tareas utilizando la herramienta Trello
+                      Además, diseñé diagramas de flujo para visualizar de manera más ágil los procesos clave y gestioné tareas utilizando la herramienta Trello.
                     </p>
                 </div>
             </div>
@@ -195,12 +195,12 @@
                 <div class="skills-box">
                     <h4 class="mb-3" id="testing-title">Testing</h4>
                     <ul>
-                        <li>Pruebas de requerimientos funcionales y no funcionales</li>
-                        <li>Diseño de casos de pruebas.</li>
-                        <li>Testing de caja negra y caja blanca</li>
-                        <li>Pruebas de regresión</li>
-                        <li>Testing explorativo</li>
-                        <li>Automatización de pruebas</li>
+                      <li id="testing-functional">Pruebas de requerimientos funcionales y no funcionales</li>
+                      <li id="testing-test-cases">Diseño de casos de prueba.</li>
+                      <li id="testing-black-white">Testing de caja negra y caja blanca</li>
+                      <li id="testing-regression">Pruebas de regresión</li>
+                      <li id="testing-exploratory">Testing exploratorio</li>
+                      <li id="testing-automation">Automatización de pruebas</li>
                     </ul>
                 </div>
             </div>
@@ -208,9 +208,9 @@
                 <div class="skills-box">
                     <h4 class="mb-3" id="management-title">Gestión y Colaboración</h4>
                     <ul>
-                        <li>Documentación técnica.</li>
-                        <li>Creación de diagramas de flujo.</li>
-                        <li>Herramientas de gestión de proyectos: Trello, Jira.</li>
+                      <li id="management-docs">Documentación técnica.</li>
+                      <li id="management-diagrams">Creación de diagramas de flujo.</li>
+                      <li id="management-tools">Herramientas de gestión de proyectos: Trello, Jira.</li>
                     </ul>
                 </div>
             </div>
@@ -225,7 +225,7 @@
       <div class="container contact-section">
         <h2 id="contact-title" class="mb-4 general-title text-center">Contacto</h2>
         <div class="d-flex flex-column align-items-center">
-          <p class="text-center">Actualmente estoy buscando nuevas oportunidades laborales. <br> Si buscar colaborar juntos no dudes en contactarme! </p>
+          <p class="text-center" id="contact-desc">Estoy lista para aportar mis conocimientos y habilidades a nuevos desafíos. <br> Si crees que puedo sumar valor a tu equipo, ¡Hablemos!</p>
 
           <!-- Email -->
           <p id="contact-mail" class="text-center email" onclick="openGmail()">munde.belen@gmail.com</p>
