@@ -81,7 +81,7 @@ document.getElementById('view-cv').addEventListener('click', function() {
     "management-diagrams": "Flowchart Creation",
     "management-tools": "Project Management Tools: Trello, Jira",
     "contact-title": "Contact",
-    "contact-desc": "I am currently looking for new job opportunities. If you're interested in collaborating, feel free to get in touch!",
+    "contact-desc": "I'm ready to contribute my knowledge and skills to new challenges. If you think I can add value to your team, let's get in touch!",
     "view-cv": "View Resume",
     "contact-download": "Download Resume"
   };
@@ -134,7 +134,7 @@ document.getElementById('view-cv').addEventListener('click', function() {
     "management-diagrams": "Creación de diagramas de flujo.",
     "management-tools": "Herramientas de gestión de proyectos: Trello, Jira.",
     "contact-title":"Contacto",
-    "contact-desc":"Actualmente estoy buscando nuevas oportunidades laborales. Si buscas colaborar juntos no dudes en contactarme!",
+    "contact-desc": "Estoy lista para aportar mis conocimientos y habilidades a nuevos desafíos. Si crees que puedo sumar valor a tu equipo, ¡Hablemos!",
     "view-cv" : "Ver currículum",
     "contact-download" : "Descargar Currículum"
   };
