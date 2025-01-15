@@ -66,7 +66,7 @@ document.getElementById('view-cv').addEventListener('click', function() {
     "internship-title": "IT Development Process Audit (Internship)",
     "internship-company": "Company: Telefónica (Movistar)",
     "internship-period": "September 2024 - November 2024",
-    "internship-desc": "Created the 'Project Development Process' manual for the systems department through information gathering, considering the methodologies used by the company and its needs. Additionally, I designed flowcharts to make key processes more agile and managed tasks using Trello.",
+    "internship-desc": "Created the 'Project Development Process' manual for the systems department by gathering information and aligning it with the company's methodologies and needs. Additionally, I designed flowcharts to streamline key processes and managed tasks using Trello.",
     "skills-title": "Some of the Technologies I Work With",
     "web-dev-title": "Web Development",
     "testing-title": "Testing",
@@ -83,7 +83,8 @@ document.getElementById('view-cv').addEventListener('click', function() {
     "contact-title": "Contact",
     "contact-desc": "I'm ready to contribute my knowledge and skills to new challenges. If you think I can add value to your team, let's get in touch!",
     "view-cv": "View Resume",
-    "contact-download": "Download Resume"
+    "contact-download": "Download Resume",
+    "alert": "Email copied"
   };
 
   // Texto Español
@@ -119,7 +120,7 @@ document.getElementById('view-cv').addEventListener('click', function() {
     "internship-title": "Auditoría en Procesos de Desarrollo TI (Pasantía).",
     "internship-company" : "Empresa: Telefónica (Movistar).",
     "internship-period" : "Septiembre 2024 - Noviembre 2024",
-    "internship-desc": "Elaboración del manual 'Proceso de Desarrollo de Proyectos' para el área de sistemas mediante relevamiento de información teniendo en cuenta las metologías utilizadas por la empresa y necesidad. Además, diseñé diagramas de flujo para visualizar de manera más ágil los procesos clave y gestioné tareas utilizando la herramienta Trello.",
+    "internship-desc": "Elaboración del manual 'Proceso de Desarrollo de Proyectos' para el área de sistemas mediante relevamiento de información teniendo en cuenta las metodologías utilizadas por la empresa y su necesidad. Además, diseñé diagramas de flujo para visualizar de manera más ágil los procesos clave y gestioné tareas utilizando la herramienta Trello.",
     "skills-title": "Algunas de las tecnologías que manejo.",
     "web-dev-title": "Desarrollo Web",
     "testing-title": "Testing",
@@ -136,7 +137,8 @@ document.getElementById('view-cv').addEventListener('click', function() {
     "contact-title":"Contacto",
     "contact-desc": "Estoy lista para aportar mis conocimientos y habilidades a nuevos desafíos. Si crees que puedo sumar valor a tu equipo, ¡Hablemos!",
     "view-cv" : "Ver currículum",
-    "contact-download" : "Descargar Currículum"
+    "contact-download" : "Descargar Currículum",
+    "alert": "Email copiado"
   };
 
   // Botón cambio idiomas
